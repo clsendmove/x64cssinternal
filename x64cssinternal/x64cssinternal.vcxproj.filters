@@ -1,0 +1,1045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{be2542be-24b9-4200-907b-331529800e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils">
+      <UniqueIdentifier>{642d8f71-d6e7-42cf-a358-cb4d7faa2990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils\safetyhook">
+      <UniqueIdentifier>{effffb16-b11f-4788-80ec-a33131075f5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils\imgui">
+      <UniqueIdentifier>{47205e6c-9219-463a-ad93-813e9fde9a14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils\steam">
+      <UniqueIdentifier>{a59e0386-8ef6-4c61-92b4-634fd4f3d9d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces">
+      <UniqueIdentifier>{d7813a72-ed74-476e-a17c-69dae2e4e37f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils\math">
+      <UniqueIdentifier>{f51d2402-45a8-435e-b768-7a3f8c69f3c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils\memory">
+      <UniqueIdentifier>{418c0da4-7762-4816-8629-1e107e9157b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\ssdk">
+      <UniqueIdentifier>{f8f266ba-56d3-4313-8b36-b4778303ffb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\sigs">
+      <UniqueIdentifier>{e9c7155e-42f2-4362-ab5c-eaae548c7663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces\engine_client">
+      <UniqueIdentifier>{5da17728-b9e9-4688-88d7-8d3279766d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces\global_vars">
+      <UniqueIdentifier>{2ec1fc34-2151-4139-b4ab-9b7b0ecfe24f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\entities">
+      <UniqueIdentifier>{8b739607-e1ef-40c6-8280-721d3c99ab48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces\chlclient">
+      <UniqueIdentifier>{685b007f-ba59-4069-8618-5a6be7e1e369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\entities\ssdk_entities">
+      <UniqueIdentifier>{3781c808-7626-41d0-a1cb-0831005499ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces\entity_list">
+      <UniqueIdentifier>{9507eed0-915b-428c-94ee-f132b125cae5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks">
+      <UniqueIdentifier>{501771f8-c6f2-488d-8b2f-cf4279fc2f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils\drawmanager">
+      <UniqueIdentifier>{af4d21af-1c83-4ea6-ae09-5110bde0899c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks\dx9">
+      <UniqueIdentifier>{058fe31c-8404-44e5-9980-9cf0d975b413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces\engine_vgui">
+      <UniqueIdentifier>{a9384092-8b18-4d64-a5b2-44b9e69ad7c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces\input">
+      <UniqueIdentifier>{c6a33934-f4eb-4c31-8e74-1453208d842b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces\move_helper">
+      <UniqueIdentifier>{c6369137-3c51-483e-822f-6ce3f4fee9d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces\prediction">
+      <UniqueIdentifier>{3a9d3aed-bc29-4ad2-bc29-d54317b894f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{5ad41777-7240-4877-8535-3b0af0d56b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\engine_pred">
+      <UniqueIdentifier>{1dcb3758-99d7-4e60-b762-e7cb7e734e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils\MD5">
+      <UniqueIdentifier>{19b37828-dc24-4854-959d-a9a91c83371c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils\netvars">
+      <UniqueIdentifier>{e386a9ee-57f5-4934-a2d6-7cb54c2edf16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="safetyhook\safetyhook.cpp">
+      <Filter>sdk\utils\safetyhook</Filter>
+    </ClCompile>
+    <ClCompile Include="safetyhook\Zydis.c">
+      <Filter>sdk\utils\safetyhook</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_stdlib.cpp">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="interfaces.cpp">
+      <Filter>sdk\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="signatures.cpp">
+      <Filter>sdk\sigs</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseHandle.cpp">
+      <Filter>sdk\entities\ssdk_entities</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbuf.cpp">
+      <Filter>sdk\ssdk</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="hooks.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="drawamanager.cpp">
+      <Filter>sdk\utils\drawmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="dx9.cpp">
+      <Filter>hooks\dx9</Filter>
+    </ClCompile>
+    <ClCompile Include="engine_pred.cpp">
+      <Filter>features\engine_pred</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>sdk\utils\MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="netvars.cpp">
+      <Filter>sdk\utils\netvars</Filter>
+    </ClCompile>
+    <ClCompile Include="entities.cpp">
+      <Filter>sdk\entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="safetyhook\Zydis.h">
+      <Filter>sdk\utils\safetyhook</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx9.h">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_stdlib.h">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>sdk\utils\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="typedef.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\AppsCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\AppTicketCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\BillingCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\BridgeCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\CCallback.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\CGameID.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ClientCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ContentServerCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ControllerCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\CSteamAPIContext.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\CSteamID.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ECurrencyCode.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\EResult.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamAppUpdateStatsQueryType.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamBufferMethod.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamError.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamFindFilter.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamNotify.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamPaymentCardType.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamSeekMethod.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamServerType.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamSubscriptionBillingInfoType.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ESteamSubscriptionStatus.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\EVoiceResult.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\FriendGameInfo.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\FriendsCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\GameCoordinatorCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\GameServerCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\gameserveritem.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\GameServerStatsCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\GameStatsCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\HTTPCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientAppManager.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientApps.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientAudio.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientBilling.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientConfigStore.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientContentServer.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientDepotBuilder.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientDeviceAuth.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientEngine.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientFriends.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientGameCoordinator.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientGameServer.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientGameServerStats.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientGameStats.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientHTTP.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientInventory.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientMasterServerUpdater.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientMatchmaking.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientMatchmakingServers.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientMusic.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientNetworkDeviceManager.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientNetworking.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientProductBuilder.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientRemoteStorage.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientScreenshots.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientShortcuts.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientStreamClient.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientStreamLauncher.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientUGC.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientUnifiedMessages.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientUser.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientUserStats.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\IClientUtils.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Interface_OSW.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\InventoryCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam2Bridge001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam2Bridge002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamAppList001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamApps001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamApps002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamApps003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamApps004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamApps005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamApps006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamApps007.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamAppTicket001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamBilling001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamBilling002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient007.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient008.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient009.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient010.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient011.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient012.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient013.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient014.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient015.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient016.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamClient017.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamContentServer001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamContentServer002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamController001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends007.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends008.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends009.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends010.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends011.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends012.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends013.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends014.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamFriends015.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameCoordinator001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer007.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer008.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer009.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer010.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer011.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServer012.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameServerStats001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamGameStats001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamHTTP001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamHTTP002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamInventory001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMasterServerUpdater001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmaking001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmaking002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmaking003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmaking004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmaking005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmaking006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmaking007.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmaking008.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmaking009.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmakingServers001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMatchmakingServers002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamMusic001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamNetworking001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamNetworking002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamNetworking003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamNetworking004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamNetworking005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamOAuth001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage007.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage008.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage009.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage010.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage011.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamRemoteStorage012.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamScreenshots001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamScreenshots002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamStreamLauncher001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUGC001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUGC002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUGC003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUnifiedMessages001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser007.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser008.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser009.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser010.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser011.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser012.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser013.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser014.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser015.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser016.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUser017.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats007.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats008.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats009.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats010.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUserStats011.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUtils001.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUtils002.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUtils003.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUtils004.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUtils005.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUtils006.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteamUtils007.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\MasterServerUpdaterCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\MatchmakingCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\MatchMakingKeyValuePair.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\MatchmakingServersCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\MusicCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\NetworkingCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\OAuthCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\POSIXLibrary.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\RemoteStorageCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ScreenshotsCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\servernetadr.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Steam.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\SteamAPI.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Steamclient.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\SteamclientAPI.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\SteamSalt.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\SteamTypes.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Steamworks.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\StreamLauncherCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamApp.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamAppDependencyInfo.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamAppLaunchOption.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamAppStats.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamAppVersion.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamDiscountQualifier.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamElemInfo.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamError.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamExternalBillingInfo.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamGlobalUserID.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamOfflineStatus.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamPaymentCardInfo.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamPaymentCardReceiptInfo.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamPrepurchaseInfo.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamPrepurchaseReceiptInfo.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamProgress.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamSplitLocalUserID.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamSubscription.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamSubscriptionBillingInfo.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamSubscriptionDiscount.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamSubscriptionReceipt.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamSubscriptionStats.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\TSteamUpdateStats.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\UGCCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\UnifiedMessagesCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\UserCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\UserStatsCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\UtilsCommon.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Win32Library.h">
+      <Filter>sdk\utils\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>sdk\interfaces\global_vars</Filter>
+    </ClInclude>
+    <ClInclude Include="math.h">
+      <Filter>sdk\utils\math</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.h">
+      <Filter>sdk\utils\math</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>sdk\utils\math</Filter>
+    </ClInclude>
+    <ClInclude Include="memory.h">
+      <Filter>sdk\utils\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="player_info_t.h">
+      <Filter>sdk\ssdk</Filter>
+    </ClInclude>
+    <ClInclude Include="c_user_cmd.h">
+      <Filter>sdk\ssdk</Filter>
+    </ClInclude>
+    <ClInclude Include="interfaces.h">
+      <Filter>sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="signatures.h">
+      <Filter>sdk\sigs</Filter>
+    </ClInclude>
+    <ClInclude Include="c_engine_client.h">
+      <Filter>sdk\interfaces\engine_client</Filter>
+    </ClInclude>
+    <ClInclude Include="client_class.h">
+      <Filter>sdk\ssdk</Filter>
+    </ClInclude>
+    <ClInclude Include="dt_common.h">
+      <Filter>sdk\ssdk</Filter>
+    </ClInclude>
+    <ClInclude Include="dt_recv.h">
+      <Filter>sdk\ssdk</Filter>
+    </ClInclude>
+    <ClInclude Include="chlclient.h">
+      <Filter>sdk\interfaces\chlclient</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseHandle.h">
+      <Filter>sdk\entities\ssdk_entities</Filter>
+    </ClInclude>
+    <ClInclude Include="i_client_entity.h">
+      <Filter>sdk\entities\ssdk_entities</Filter>
+    </ClInclude>
+    <ClInclude Include="i_client_networkable.h">
+      <Filter>sdk\entities\ssdk_entities</Filter>
+    </ClInclude>
+    <ClInclude Include="i_client_renderable.h">
+      <Filter>sdk\entities\ssdk_entities</Filter>
+    </ClInclude>
+    <ClInclude Include="i_client_thinkable.h">
+      <Filter>sdk\entities\ssdk_entities</Filter>
+    </ClInclude>
+    <ClInclude Include="i_client_unknown.h">
+      <Filter>sdk\entities\ssdk_entities</Filter>
+    </ClInclude>
+    <ClInclude Include="i_handle_entity.h">
+      <Filter>sdk\entities\ssdk_entities</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbuf.h">
+      <Filter>sdk\ssdk</Filter>
+    </ClInclude>
+    <ClInclude Include="c_entity_list.h">
+      <Filter>sdk\interfaces\entity_list</Filter>
+    </ClInclude>
+    <ClInclude Include="entities.h">
+      <Filter>sdk\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="drawmanager.h">
+      <Filter>sdk\utils\drawmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="cs.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="dx9.h">
+      <Filter>hooks\dx9</Filter>
+    </ClInclude>
+    <ClInclude Include="enginevgui.h">
+      <Filter>sdk\interfaces\engine_vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>sdk\interfaces\input</Filter>
+    </ClInclude>
+    <ClInclude Include="c_move_helper.h">
+      <Filter>sdk\interfaces\move_helper</Filter>
+    </ClInclude>
+    <ClInclude Include="prediction.h">
+      <Filter>sdk\interfaces\prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="engine_pred.h">
+      <Filter>features\engine_pred</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>sdk\utils\MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="netvars.h">
+      <Filter>sdk\utils\netvars</Filter>
+    </ClInclude>
+    <ClInclude Include="safetyhook\safetyhook.hpp">
+      <Filter>sdk\utils\safetyhook</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
