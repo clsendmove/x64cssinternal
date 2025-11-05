@@ -59,7 +59,6 @@ namespace memory {
         if (!module_handle)
             return T{ };
 
-        // Convert IDA-style signature to byte array
         auto signature_to_byte = [](const char* signature) {
             std::vector<int> bytes;
             const char* end = signature + std::strlen(signature);
@@ -99,10 +98,6 @@ namespace memory {
             }
 
             if (found) {
-                // error C2440: 'reinterpret_cast': 'uintptr_t' - 'uintptr_t' dönüþümü yapýlamýyor
-                // Kill me.
-                // "Later."
-                //return reinterpret_cast<T>(reinterpret_cast<std::uintptr_t>(&scan_bytes[i]) + offset);
                 auto address = reinterpret_cast<std::uintptr_t>(&scan_bytes[i]) + offset;
                 return static_cast<T>(address);
             }
